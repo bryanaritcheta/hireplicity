@@ -1,0 +1,8 @@
+.sampleArrayItem:not(:last-child):after {
+    content: ", ";
+}
+
+.sampleArrayItem:first-child:before,
+.sampleArrayItem:last-child:after {
+    content: " ";
+}
