@@ -28,7 +28,7 @@ function RemoveDuplicates() {
 
     return (
         <div id="section-remove-duplicate">
-            <h2>Remove duplicates from an array.</h2>
+            <h2>Remove duplicates from a hash array.</h2>
             <div className="original-array">
                 <h3>Original array: [
                     {samplearray.map((n) => (
