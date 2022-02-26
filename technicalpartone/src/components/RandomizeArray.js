@@ -26,7 +26,7 @@ function RandomizeArray() {
         <div id="section-randomize-array">
             <h2>Randomize an array.</h2>
             <div>
-                <h3>Randomized array: [
+                <h3>Array: [
                     {samplearray.map((n) => (
                         <span
                             className="sampleArrayItem"
