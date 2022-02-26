@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-const rand = () => Math.floor(Math.random() * 100) + 1;
 
+const rand = () => Math.floor(Math.random() * 100) + 1;
 const sampleArray = [
     rand(),
     rand(),
