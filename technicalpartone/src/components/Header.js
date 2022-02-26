@@ -1,0 +1,93 @@
+import React from 'react'
+// import { Link as Link1 } from 'react-router-dom'
+import { Link as Link2 } from 'react-scroll'
+
+function Header() {
+    return (
+        <div
+            className="
+            bg-purple-900
+        "
+        >
+            <nav
+                className="
+                    max-w-screen-xl
+                    mx-auto
+                    py-4
+                    text-white
+                "
+            >
+                <ul
+                    className="
+                    md:flex
+                    md:justify-around
+                    font-bold
+                "
+                >
+                    <li>
+                        <Link2
+                            to="section-compute-factorial"
+                            spy={true}
+                            smooth={true}
+                            className="
+                                cursor-pointer
+                            "
+                        >
+                            Factorial
+                        </Link2>
+                    </li>
+                    <li>
+                        <Link2
+                            to="section-is-contained"
+                            spy={true}
+                            smooth={true}
+                            className="
+                                cursor-pointer
+                            "
+                        >
+                            isContained
+                        </Link2>
+                    </li>
+                    <li>
+                        <Link2
+                            to="section-randomize-array"
+                            spy={true}
+                            smooth={true}
+                            className="
+                                cursor-pointer
+                            "
+                        >
+                            Randomize
+                        </Link2>
+                    </li>
+                    <li>
+                        <Link2
+                            to="section-remove-duplicate"
+                            spy={true}
+                            smooth={true}
+                            className="
+                                cursor-pointer
+                            "
+                        >
+                            removeDuplicate
+                        </Link2>
+                    </li>
+                    <li>
+                        <Link2
+                            to="section-regular-expression"
+                            spy={true}
+                            smooth={true}
+                            className="
+                                cursor-pointer
+                            "
+                        >
+                            regExp
+                        </Link2>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
+}
+
+export default Header

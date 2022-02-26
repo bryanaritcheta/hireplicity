@@ -10,16 +10,46 @@ function RegularExpression() {
     }
 
     return (
-        <div id="section-regular-expression">
-            <h2>Regular expression for multiple date formats.</h2>
-            <p>Input {valid}</p>
-            <form>
-                <label>Enter date: </label>
-                <input
-                    type="text"
-                    onChange={(e) => checkDate(e.target.value)}
-                />
-            </form>
+        <div
+            id="section-regular-expression"
+            className="
+                py-32
+                bg-purple-100
+            "
+        >
+            <div
+                className="
+                    max-w-screen-lg
+                    mx-auto
+                "
+            >
+                <h2
+                    className="
+                        font-bold
+                        text-2xl
+                        py-4
+                    "
+                >
+                    Regular expression for multiple date formats.
+                </h2>
+                <p
+                    className="
+                        pb-4
+                    "
+                >
+                    Input <span className="font-bold">{valid}</span>
+                </p>
+                <form>
+                    <label>Enter date: </label>
+                    <input
+                        type="text"
+                        onChange={(e) => checkDate(e.target.value)}
+                        className="
+                            border
+                        "
+                    />
+                </form>
+            </div>
         </div>
     )
 }
