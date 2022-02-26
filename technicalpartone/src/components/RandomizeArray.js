@@ -15,21 +15,30 @@ const sampleArray = [
 ]
 
 function RandomizeArray() {
-    const [, arrayRandom] = useState(sampleArray.sort((a, b) => 0.5 - Math.random()))
+    const [samplearray, arrayRandom] = useState(sampleArray)
+
+    const arrayRandomize = (samplearray) => {
+        const samplearraynew = samplearray.slice(0).sort((a, b) => 0.5 - Math.random())
+        arrayRandom(samplearraynew)
+    }
 
     return (
         <div id="section-is-contained">
             <h2>Randomize an array.</h2>
             <div>
                 <h3>Randomized array: [
-                    {sampleArray.map((n) => (
-                        <span className="sampleArrayItem" key={n + Math.random()}>{n}</span>
+                    {samplearray.map((n) => (
+                        <span
+                            className="sampleArrayItem"
+                            key={n * Math.random() * Math.random()}>
+                            {n}
+                        </span>
                     ))}
                     ]
                 </h3>
             </div>
             <button
-                onClick={arrayRandom}
+                onClick={() => arrayRandomize(sampleArray)}
             >
                 Randomize
             </button>
