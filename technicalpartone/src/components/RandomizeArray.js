@@ -23,7 +23,7 @@ function RandomizeArray() {
     }
 
     return (
-        <div id="section-is-contained">
+        <div id="section-randomize-array">
             <h2>Randomize an array.</h2>
             <div>
                 <h3>Randomized array: [
