@@ -6,9 +6,7 @@ function ComputeFactorial() {
         return num *= computeFactorial(num - 1)
     }
 
-    //console.log(computeFactorial(5));
-
-    const [number, setNumber] = useState("");
+    const [number, setNumber] = useState("")
 
     const updateNumber = (number) => {
         number = computeFactorial(number)
