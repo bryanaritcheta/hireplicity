@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-const rand=()=>Math.floor(Math.random() * 100) + 1;
-
+const rand = () => Math.floor(Math.random() * 100) + 1;
 const sampleArray = [
     rand(),
     rand(),
@@ -10,7 +9,7 @@ const sampleArray = [
     rand()
 ].sort()
 
-function IsContained() { 
+function IsContained() {
     const [number, setNumber] = useState("Input")
     const [contained, numberContained] = useState("number.")
 
@@ -26,7 +25,11 @@ function IsContained() {
             <div>
                 <h3>Sample array: [
                     {sampleArray.map((n) => (
-                        <span className="sampleArrayItem" key={n}>{n}</span>
+                        <span
+                            className="sampleArrayItem"
+                            key={n * Math.random() * Math.random()}>
+                            {n}
+                        </span>
                     ))}
                     ]
                 </h3>
