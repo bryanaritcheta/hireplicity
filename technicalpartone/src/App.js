@@ -2,6 +2,7 @@ import './App.css';
 import ComputeFactorial from './components/ComputeFactorial'
 import IsContained from './components/IsContained';
 import RandomizeArray from './components/RandomizeArray';
+import RemoveDuplicates from './components/RemoveDuplicates';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <ComputeFactorial />
       <IsContained />
       <RandomizeArray />
+      <RemoveDuplicates />
     </div>
   );
 }
