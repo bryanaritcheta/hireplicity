@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 
+const rand=()=>Math.floor(Math.random() * 100) + 1;
+
 const sampleArray = [
-    Math.floor((Math.random() * 100) + 1),
-    Math.floor((Math.random() * 100) + 1),
-    Math.floor((Math.random() * 100) + 1),
-    Math.floor((Math.random() * 100) + 1),
-    Math.floor((Math.random() * 100) + 1)
+    rand(),
+    rand(),
+    rand(),
+    rand(),
+    rand()
 ].sort()
 
 function IsContained() { 
