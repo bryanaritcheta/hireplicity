@@ -1,33 +1,34 @@
 import React, { useState } from 'react'
 
 const rand = () => Math.floor(Math.random() * 10) + 1;
-var sampleArray = [
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand(),
-    rand()
-]
+var sampleArray = {
+    0: rand(),
+    1: rand(),
+    2: rand(),
+    3: rand(),
+    4: rand(),
+    5: rand(),
+    6: rand(),
+    7: rand(),
+    8: rand(),
+    9: rand()
+}
 
 function RemoveDuplicates() {
-    const samplearray = sampleArray
+    const samplearray = Object.values(sampleArray)
 
-    const [samplearraynew, arrayRandom] = useState(new Array(1))
+    const [samplearraynew, arrayFilter] = useState(new Array(1))
 
     const removeDuplicate = (samplearraynew) => {
-        samplearraynew = samplearraynew.filter(function (x, i, a) {
+        samplearraynew = Object.values(samplearraynew).filter(function (x, i, a) {
             return a.indexOf(x) === i
         })
-        arrayRandom(samplearraynew)
+        arrayFilter(samplearraynew)
     }
 
     return (
         <div id="section-remove-duplicate">
+            <h2>Randomize an array.</h2>
             <div className="original-array">
                 <h3>Original array: [
                     {samplearray.map((n) => (
