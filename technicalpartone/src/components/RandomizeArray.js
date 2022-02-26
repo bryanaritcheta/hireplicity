@@ -6,6 +6,11 @@ const sampleArray = [
     rand(),
     rand(),
     rand(),
+    rand(),
+    rand(),
+    rand(),
+    rand(),
+    rand(),
     rand()
 ]
 
