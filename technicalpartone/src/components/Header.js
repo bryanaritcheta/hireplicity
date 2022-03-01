@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link as Link1 } from 'react-router-dom'
 import { Link as Link2 } from 'react-scroll'
 
 function Header() {
